@@ -94,26 +94,26 @@ select * from users;
 mysql> use FCT;
 mysql> select * from users;
 ```
-### **Sample Output:**
+### Sample Output:
 
 ---
-**1. Signup Form Page**
+### 1. Signup Form Page 
 
 ![](./img/Screenshot-form.png)
 *User registration form with fields for name, email, website, comment, and gender.*
 
 ---
-#### 2. Form Submission Result
+### 2. Form Submission Result
 ![](./img/Screenshot-submit.png)
 *Confirmation page showing successful form submission with user data.*
 
 ---
-#### 3. Database View
+### 3. Database View
 
 *Command-line view of the MySQL database showing stored user records.*
 
 ---
-#### 4. AWS EC2 Instance Management
+### 4. AWS EC2 Instance Management
 
 ![](./img/Screenshot-ec2.png)
 *AWS EC2 dashboard showing running instances for this project.*
