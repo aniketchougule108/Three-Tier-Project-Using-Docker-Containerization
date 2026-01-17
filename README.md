@@ -109,7 +109,7 @@ mysql> select * from users;
 
 ---
 ### 3. Database View
-
+![](./img/Screenshot%20-db.png)
 *Command-line view of the MySQL database showing stored user records.*
 
 ---
