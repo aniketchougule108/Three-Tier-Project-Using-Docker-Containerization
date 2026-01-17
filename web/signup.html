@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Signup Form</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-container {
+        background: #ffffff;
+        width: 380px;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+
+    .form-container h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        color: #333;
+    }
+
+    label {
+        font-weight: 600;
+        color: #555;
+        display: block;
+        margin-bottom: 6px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    textarea {
+        width: 100%;
+        padding: 10px 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 14px;
+        outline: none;
+        transition: border 0.3s;
+    }
+
+    input:focus,
+    textarea:focus {
+        border-color: #667eea;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .gender-group {
+        margin-top: 10px;
+    }
+
+    .gender-group input {
+        margin-right: 6px;
+    }
+
+    .gender-group label {
+        display: inline-block;
+        margin-right: 15px;
+        font-weight: normal;
+    }
+
+    .submit-btn {
+        width: 100%;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: #fff;
+        border: none;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .submit-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Signup Form</h2>
+    <form action="submit.php" method="post">
+
+        <label>Name</label>
+        <input type="text" name="name" required>
+
+        <br><br>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <br><br>
+
+        <label>Website</label>
+        <input type="url" name="website">
+
+        <br><br>
+
+        <label>Comment</label>
+        <textarea name="comment" rows="4"></textarea>
+
+        <br><br>
+
+        <label>Gender</label>
+        <div class="gender-group">
+            <label><input type="radio" name="gender" value="female" required> Female</label>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="other"> Other</label>
+        </div>
+
+        <input type="submit" value="Submit" class="submit-btn">
+    </form>
+</div>
+
+</body>
+</html>
