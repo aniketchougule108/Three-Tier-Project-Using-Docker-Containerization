@@ -121,10 +121,12 @@ mysql> select * from users;
 ---
 ### 🔧 Configuration Files
 **docker-compose.yml**
+
 ![](./img/Screenshot-docker-compose.png)
 
 ---
-**Dockerfile**
+**Dockerfile**  
+
 ![](./img/Screenshot-Dockerfile.png)
 
 ---
