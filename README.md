@@ -2,7 +2,6 @@
 ## 📋 Project Overview
 This project demonstrates a fully functional three-tier web application deployed using Docker containers on an AWS EC2 instance. The application follows industry-standard architecture by separating concerns into three independent layers:
 
-![](./img/architecture.png)
 
 1. **Presentation Layer (Web Container)** – Nginx
 2. **Application Layer (Logic Container)** – PHP-FPM
@@ -12,6 +11,9 @@ Users submit data via a web form, which is processed by PHP and securely stored 
 ---
 
 ## 🏗️ Architecture Overview
+
+![](./img/architecture.png)
+
 
 ### Key Benefits of This Architecture:
 * Loose coupling between services
@@ -92,10 +94,10 @@ select * from users;
 mysql> use FCT;
 mysql> select * from users;
 ```
-**Sample Output:**
+### **Sample Output:**
 
 ---
-#### 1. Signup Form Page
+**1. Signup Form Page**
 
 ![](./img/Screenshot-form.png)
 *User registration form with fields for name, email, website, comment, and gender.*
